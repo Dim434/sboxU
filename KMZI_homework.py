@@ -27,3 +27,27 @@ if __name__ == '__main__':
         print("S[{}] Diff: {}, Lin: {}".format(i, diff_uniformity, lin_uniformity))
         for j, SS in enumerate(S_boxes, start=1):
             print("Affine equivalency S[{}] and S[{}]: {}".format(i, j, len(affine_equivalence(S, SS)) != 0))
+
+"""
+Результат
+S[1] Diff: 0.375, Lin: 0.75
+Affine equivalency S[1] and S[1]: True
+Affine equivalency S[1] and S[2]: False
+Affine equivalency S[1] and S[3]: True
+Affine equivalency S[1] and S[4]: False
+S[2] Diff: 0.375, Lin: 0.75
+Affine equivalency S[2] and S[1]: False
+Affine equivalency S[2] and S[2]: True
+Affine equivalency S[2] and S[3]: False
+Affine equivalency S[2] and S[4]: True
+S[3] Diff: 0.375, Lin: 0.75
+Affine equivalency S[3] and S[1]: True
+Affine equivalency S[3] and S[2]: False
+Affine equivalency S[3] and S[3]: True
+Affine equivalency S[3] and S[4]: False
+S[4] Diff: 0.375, Lin: 0.75
+Affine equivalency S[4] and S[1]: False
+Affine equivalency S[4] and S[2]: True
+Affine equivalency S[4] and S[3]: False
+Affine equivalency S[4] and S[4]: True
+"""
